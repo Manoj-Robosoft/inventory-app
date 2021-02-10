@@ -47,8 +47,10 @@ const AccordionRow = (props) => {
     setQuantityCheckbox(checked);
 
     if (checked) {
-      setQuantity("");
+      setQuantity("Unlimited");
       setQuantityError("");
+    } else {
+      setQuantity("");
     }
   };
 
