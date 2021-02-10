@@ -1,10 +1,19 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { updateItemQuantity } from "../../store/actions/actions";
 import "./AccordionRow.css";
 import editIcon from "./edit.svg";
 
 const AccordionRow = (props) => {
-  const { name, color, options, sku_id, quantity: initialQuantity } = props;
+  const {
+    name,
+    color,
+    options,
+    sku_id,
+    quantity: initialQuantity,
+    subCategoryId,
+  } = props;
+  const dispatch = useDispatch();
 
   const [edit, setEdit] = useState(false);
   const [quantity, setQuantity] = useState(initialQuantity);
@@ -47,6 +56,23 @@ const AccordionRow = (props) => {
     if (quantity || quantityCheckbox) {
       if (quantityCheckbox) {
         setQuantity("Unlimited");
+        // Dispatch an action to update store
+        dispatch(
+          updateItemQuantity({
+            itemId: sku_id,
+            subCategoryId,
+            quantity: "Unlimited",
+          })
+        );
+      } else {
+        // Dispatch an action to update store
+        dispatch(
+          updateItemQuantity({
+            itemId: sku_id,
+            subCategoryId,
+            quantity,
+          })
+        );
       }
       setEdit(false);
       setQuantityError("");
@@ -56,6 +82,21 @@ const AccordionRow = (props) => {
       );
     }
   };
+
+  // useEffect(() => {
+  //   if (!quantity) {
+  //     return;
+  //   }
+
+  //   // Dispatch an action to update store
+  //   dispatch(
+  //     updateItemQuantity({
+  //       itemId: sku_id,
+  //       subCategoryId,
+  //       quantity,
+  //     })
+  //   );
+  // }, [quantity]);
 
   const quantityEditJsx = (
     <div className="quantity__edit-container">

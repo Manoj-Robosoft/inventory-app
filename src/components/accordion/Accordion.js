@@ -6,9 +6,9 @@ import ToggleSwitch from "../toggleSwitch/ToggleSwitch";
 
 const Accordion = (props) => {
   // props.children contains the accordion content
-  const { title, children, subAccordion = false, availability = false } = props;
+  const { title, children, subAccordion = false, availability = false, activeAccordion } = props;
 
-  const [active, setActive] = useState(subAccordion);
+  const [active, setActive] = useState(subAccordion || activeAccordion);
   const contentRef = useRef(null);
 
   useEffect(() => {
