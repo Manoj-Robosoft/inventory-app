@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/inventory-app/static/css/main.5fc3e277.chunk.css",
+    "main.js": "/inventory-app/static/js/main.9d97e549.chunk.js",
+    "main.js.map": "/inventory-app/static/js/main.9d97e549.chunk.js.map",
+    "runtime-main.js": "/inventory-app/static/js/runtime-main.dbdf9983.js",
+    "runtime-main.js.map": "/inventory-app/static/js/runtime-main.dbdf9983.js.map",
+    "static/js/2.9ce25d12.chunk.js": "/inventory-app/static/js/2.9ce25d12.chunk.js",
+    "static/js/2.9ce25d12.chunk.js.map": "/inventory-app/static/js/2.9ce25d12.chunk.js.map",
+    "static/js/3.91999337.chunk.js": "/inventory-app/static/js/3.91999337.chunk.js",
+    "static/js/3.91999337.chunk.js.map": "/inventory-app/static/js/3.91999337.chunk.js.map",
+    "index.html": "/inventory-app/index.html",
+    "static/css/main.5fc3e277.chunk.css.map": "/inventory-app/static/css/main.5fc3e277.chunk.css.map",
+    "static/js/2.9ce25d12.chunk.js.LICENSE.txt": "/inventory-app/static/js/2.9ce25d12.chunk.js.LICENSE.txt",
+    "static/media/clear.cc20c4c8.PNG": "/inventory-app/static/media/clear.cc20c4c8.PNG",
+    "static/media/downArrow.a561d6fe.PNG": "/inventory-app/static/media/downArrow.a561d6fe.PNG",
+    "static/media/edit.2fa16508.svg": "/inventory-app/static/media/edit.2fa16508.svg",
+    "static/media/plus.19250efd.svg": "/inventory-app/static/media/plus.19250efd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dbdf9983.js",
+    "static/js/2.9ce25d12.chunk.js",
+    "static/css/main.5fc3e277.chunk.css",
+    "static/js/main.9d97e549.chunk.js"
+  ]
+}
