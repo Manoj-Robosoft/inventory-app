@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app__content {
+  position: relative;
+  margin-left: 80px;
+}
+
+.app__body {
+  background-color: #fcfbfc;
+  padding: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.app__heading {
+  font-weight: 600;
+  font-size: 30px;
+  padding: 2rem;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 48px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.03);
+}
+
+.item__header ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.item__header {
+  color: #a9b1c3;
+  padding: 0 1rem;
+}
+
+.item__header .actionsText {
+  text-align: center;
+}

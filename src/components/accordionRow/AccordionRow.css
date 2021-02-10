@@ -1,0 +1,71 @@
+.accordion__row {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.accordion__row-item {
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.accordion__row-item.skuId,
+.accordion__row-item.quantity {
+  font-weight: 600;
+}
+
+.accordion__row-item.edit {
+  text-align: center;
+}
+
+.accordion__row-item.edit img {
+  cursor: pointer;
+  width: 1.5rem;
+}
+
+.accordion__items-container {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0.8rem 0;
+}
+
+.quantity__edit-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quantity-text-input {
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  padding: 0.5rem;
+  width: 6.5rem;
+}
+.quantity-text-input input {
+  background-color: #f3f3f3;
+  border: none;
+  color: #333333;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.quantity__edit-container .editText {
+  padding-left: 0.5rem;
+}
+
+.accordion__save-btn {
+  background: #167bf9;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+
+
+.quantity-error {
+  color: red;
+}
