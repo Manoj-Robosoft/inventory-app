@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { updateItemQuantity } from "../../store/actions/actions";
 import "./AccordionRow.css";
@@ -82,21 +82,6 @@ const AccordionRow = (props) => {
       );
     }
   };
-
-  // useEffect(() => {
-  //   if (!quantity) {
-  //     return;
-  //   }
-
-  //   // Dispatch an action to update store
-  //   dispatch(
-  //     updateItemQuantity({
-  //       itemId: sku_id,
-  //       subCategoryId,
-  //       quantity,
-  //     })
-  //   );
-  // }, [quantity]);
 
   const quantityEditJsx = (
     <div className="quantity__edit-container">
